@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commonlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:id="@+id/llheader"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background= "#FBB917" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_user2" />
+
+            <TextView
+                android:id="@+id/textCurrentUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="@string/defaultUserName" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lldata"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="111dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/finalArrivalLabelTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/finalArrivalLabelText" />
+
+        <TextView
+            android:id="@+id/finalCostLabelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/finalArrivalLabelTextId"
+            android:text="@string/finalCostLabelText" />
+
+        <TextView
+            android:id="@+id/finalArrivalTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/finalArrivalLabelTextId"
+            android:layout_alignBottom="@+id/finalArrivalLabelTextId"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/finalCostLabelId"
+            android:text="@string/finalArrivalText" />
+
+        <TextView
+            android:id="@+id/finalCostTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/finalCostLabelId"
+            android:layout_alignBottom="@+id/finalCostLabelId"
+            android:layout_alignLeft="@+id/finalArrivalTextId"
+            android:text="@string/finalCostText" />
+
+        <TextView
+            android:id="@+id/textApproved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/finalArrivalLabelTextId"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginBottom="42dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llfooter"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="5.0"
+        android:background= "#FBB917" >
+    </LinearLayout>
+
+</LinearLayout>

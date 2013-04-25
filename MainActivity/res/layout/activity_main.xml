@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/lldata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_abstract_header_footer" />
+
+    <ProgressBar
+        android:id="@+id/connectionProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/nearestTaxiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/connectionProgressBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mainArrivalTimeLabel" />
+
+    <TextView
+        android:id="@+id/arrivalTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/mainArrivalTimeText"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationTextView"
+        android:layout_alignLeft="@+id/locationTextView"
+        android:layout_marginBottom="34dp"
+        android:text="Your location is:" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nearestTaxiTextView"
+        android:layout_alignLeft="@+id/nearestTaxiTextView"
+        android:layout_marginBottom="22dp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationActivity" >
+
+    <include layout="@layout/activity_abstract_header_footer"/>
+
+    
+    <TextView
+        android:id="@+id/textViewConfirmationToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewConfirmationFromLabel"
+        android:layout_below="@+id/textViewConfirmationFromLabel"
+        android:layout_marginTop="16dp"
+        android:text="@string/confToLabel" />
+
+    <TextView
+        android:id="@+id/textViewConfirmationFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/confFromLabel" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewConfirmationToText"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/textViewConfirmationFromLabel"
+        android:onClick="sendMessageToFinal"
+        android:text="@string/confButtonText" />
+
+    <TextView
+        android:id="@+id/textViewConfirmationToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewConfirmationToLabel"
+        android:layout_alignBottom="@+id/textViewConfirmationToLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:text="@string/confToText" />
+
+    <TextView
+        android:id="@+id/textViewConfirmationFromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewConfirmationToLabel"
+        android:layout_alignLeft="@+id/textViewConfirmationToText"
+        android:text="@string/confFromText" />
+
+</RelativeLayout>

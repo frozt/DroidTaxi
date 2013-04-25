@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item android:id="@+id/menu_user_settings"
+        android:icon="@drawable/ic_action_menu_user"
+		android:title="User Settings" />
+	
+	<item android:id="@+id/menu_address_book"
+	    android:icon="@drawable/ic_launcher_address_book"
+		android:title="Address Book" />
+
+</menu>

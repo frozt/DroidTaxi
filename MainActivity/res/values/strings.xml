@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DroidTaxi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">DroidTaxi</string>
+    <string name="title_activity_destination">DroidTaxi</string>
+    <string name="title_activity_confirmation">DroidTaxi</string>
+    <string name="title_activity_final">DroidTaxi</string>
+    <string name="headerHomeButton">Home</string>
+    <string name="headerDestinationButton">Destination</string>
+    <string name="headerConfirmationButton">Confirmation</string>
+    <string name="title_activity_abstract_header_footer">AbstractHeaderFooterActivity</string>
+    <string name="defaultCost">This is the default Cost</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string name="mainArrivalTimeLabel">The nearest taxi can reach you in:</string>
+    <string name="mainArrivalTimeText">9 min</string>
+    <string name="confFromLabel">From:</string>
+    <string name="confFromText">Not selected...</string>
+    <string name="confToLabel">To:</string>
+    <string name="confToText">Not selected...</string>
+    <string name="confButtonText">Confirm</string>
+    <string name="finalArrivalLabelText">Cab Arrival in:</string>
+    <string name="finalCostLabelText">Estimated cost:</string>
+    <string name="finalArrivalText">-</string>
+    <string name="finalCostText">-</string>
+    <string name="defaultUserName">No user set</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt">User Settings</string>
+    <string name="title_activity_address_book">AddressBookActivity</string>
+    <string name="title_activity_display_address_book">Address Book</string>
+    <string name="title_activity_add_address">AddAddressActivity</string>
+    <string name="not_support_gps">GPS provider not supported</string>
+    <string name="title_activity_edit_user_info">EditUserInfoActivity</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestinationActivity" >
+
+    <include layout="@layout/activity_abstract_header_footer" />
+
+    <TextView
+        android:id="@+id/textViewCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/defaultCost" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCost"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center|center_vertical"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <TextView
+        android:id="@+id/textDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner1"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/spinner1"
+        android:text="TextView" />
+
+</RelativeLayout>
